@@ -1,0 +1,20 @@
+﻿<Window x:Class="MasterFloorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MasterFloorApp"
+        mc:Ignorable="d"
+        Title="{Binding ElementName=MainFrame, Path=Content.Title}" Height="450" Width="800" MinWidth="1000" MinHeight="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#F4E8D3">
+            <Image Source="Resources/logo.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,0"></Image>
+            <TextBlock VerticalAlignment="Center" FontSize="32" HorizontalAlignment="Center" Text="«Мастер пол»"></TextBlock>
+        </Grid>
+        <Frame Grid.Row="1" NavigationUIVisibility="Hidden" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="MainFrame"></Frame>
+    </Grid>
+</Window>
