@@ -90,14 +90,14 @@
             <PropertyRef Name="IdPartner" />
           </Key>
           <Property Name="IdPartner" Type="int" Nullable="false" />
-          <Property Name="Partner" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="PartnerType">
           <Key>
             <PropertyRef Name="IdPartnerType" />
           </Key>
           <Property Name="IdPartnerType" Type="int" Nullable="false" />
-          <Property Name="PartnerType" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="Products">
           <Key>
@@ -474,7 +474,7 @@
             <PropertyRef Name="IdPartner" />
           </Key>
           <Property Name="IdPartner" Type="Int32" Nullable="false" />
-          <Property Name="Partner1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="InfoPartner" Relationship="Self.FK_InfoPartner_Partner" FromRole="Partner" ToRole="InfoPartner" />
           <NavigationProperty Name="InfoProduct" Relationship="Self.FK_InfoProduct_Partner" FromRole="Partner" ToRole="InfoProduct" />
         </EntityType>
@@ -483,7 +483,7 @@
             <PropertyRef Name="IdPartnerType" />
           </Key>
           <Property Name="IdPartnerType" Type="Int32" Nullable="false" />
-          <Property Name="PartnerType1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="InfoPartner" Relationship="Self.FK_InfoPartner_PartnerType" FromRole="PartnerType" ToRole="InfoPartner" />
         </EntityType>
         <EntityType Name="Products">
@@ -859,7 +859,7 @@
             <EntityTypeMapping TypeName="databaseModel.Partner">
               <MappingFragment StoreEntitySet="Partner">
                 <ScalarProperty Name="IdPartner" ColumnName="IdPartner" />
-                <ScalarProperty Name="Partner1" ColumnName="Partner" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -867,7 +867,7 @@
             <EntityTypeMapping TypeName="databaseModel.PartnerType">
               <MappingFragment StoreEntitySet="PartnerType">
                 <ScalarProperty Name="IdPartnerType" ColumnName="IdPartnerType" />
-                <ScalarProperty Name="PartnerType1" ColumnName="PartnerType" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

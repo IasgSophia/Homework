@@ -85,14 +85,14 @@
       <PropertyRef Name="IdPartner" />
     </Key>
     <Property Name="IdPartner" Type="int" Nullable="false" />
-    <Property Name="Partner" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="PartnerType">
     <Key>
       <PropertyRef Name="IdPartnerType" />
     </Key>
     <Property Name="IdPartnerType" Type="int" Nullable="false" />
-    <Property Name="PartnerType" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="Products">
     <Key>

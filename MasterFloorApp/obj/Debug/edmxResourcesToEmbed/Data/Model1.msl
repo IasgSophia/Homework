@@ -94,7 +94,7 @@
       <EntityTypeMapping TypeName="databaseModel.Partner">
         <MappingFragment StoreEntitySet="Partner">
           <ScalarProperty Name="IdPartner" ColumnName="IdPartner" />
-          <ScalarProperty Name="Partner1" ColumnName="Partner" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -102,7 +102,7 @@
       <EntityTypeMapping TypeName="databaseModel.PartnerType">
         <MappingFragment StoreEntitySet="PartnerType">
           <ScalarProperty Name="IdPartnerType" ColumnName="IdPartnerType" />
-          <ScalarProperty Name="PartnerType1" ColumnName="PartnerType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

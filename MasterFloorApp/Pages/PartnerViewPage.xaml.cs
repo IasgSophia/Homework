@@ -27,8 +27,28 @@ namespace MasterFloorApp.Pages
         }
         public void Init()
         {
-            PartnerListView.ItemsSource = Data.databaseEntities.GetContext().InfoPartner.ToList();
+            try
+            {
+                PartnerListView.ItemsSource = Data.databaseEntities.GetContext().InfoPartner.ToList();
+            }
+            catch { }
+            
+        }
+        public List<Data.InfoPartner> _infoPartner = Data.databaseEntities.GetContext().InfoPartner.ToList();
 
+        public void Update()
+        {
+            try
+            {
+                _infoPartner = Data.databaseEntities.GetContext().InfoPartner.ToList();
+
+            }
+            catch { }
+
+        }
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.AddEditPartnerPage(null));
         }
     }
 }

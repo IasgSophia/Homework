@@ -10,16 +10,16 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
-        <ListView x:Name="PartnerListView" Grid.Row="0">
+        <ListView x:Name="PartnerListView" Grid.Row="0" Width="600">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Style.Triggers>
-                        <DataTrigger>
-                            <Setter Property="Background" Value="Gray"></Setter>
+                        <DataTrigger Binding="{Binding }" Value="0">
+                            <Setter Property="Background" Value="Gray"/>
                         </DataTrigger>
                     </Style.Triggers>
                 </Style>
@@ -36,18 +36,20 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
 
-                        <Grid Grid.Row="0" Grid.Column="0">
-                            <TextBlock Text="{Binding PartnerType.PartnerType}"></TextBlock>
-                            <TextBlock Text="{Binding Partner.Partner}"></TextBlock>
+                        <Grid Grid.Row="0" Grid.Column="0" >
+                            <TextBlock FontSize="20" Text="{Binding PartnerType.Name, StringFormat={}{0} | }"></TextBlock>
+                            <TextBlock FontSize="20" Margin="50,0,0,0" Text="{Binding Partner.Name}"></TextBlock>
                         </Grid>
+                        
                         <StackPanel Grid.Row="1" Grid.Column="0">
                             <TextBlock Text="{Binding Directors.LastName}"></TextBlock>
-                            <TextBlock Text="{Binding Directors.Phone}"></TextBlock>
-                            <TextBlock Text="{Binding Partner.Partner}"></TextBlock>
+                            <TextBlock Text="{Binding Phone}"></TextBlock>
+                            <TextBlock Text="{Binding Rating, StringFormat={}Рейтинг: {0}}"></TextBlock>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>            
         </ListView>
+        <Button Grid.Row="1" x:Name="AddButton" Click="AddButton_Click" Content="Добавить партнера"></Button>
     </Grid>
 </Page>

@@ -102,7 +102,7 @@
       <PropertyRef Name="IdPartner" />
     </Key>
     <Property Name="IdPartner" Type="Int32" Nullable="false" />
-    <Property Name="Partner1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="InfoPartner" Relationship="Self.FK_InfoPartner_Partner" FromRole="Partner" ToRole="InfoPartner" />
     <NavigationProperty Name="InfoProduct" Relationship="Self.FK_InfoProduct_Partner" FromRole="Partner" ToRole="InfoProduct" />
   </EntityType>
@@ -111,7 +111,7 @@
       <PropertyRef Name="IdPartnerType" />
     </Key>
     <Property Name="IdPartnerType" Type="Int32" Nullable="false" />
-    <Property Name="PartnerType1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="InfoPartner" Relationship="Self.FK_InfoPartner_PartnerType" FromRole="PartnerType" ToRole="InfoPartner" />
   </EntityType>
   <EntityType Name="Products">

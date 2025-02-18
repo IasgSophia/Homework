@@ -24,7 +24,7 @@ namespace MasterFloorApp
         {
             InitializeComponent();
             Classes.Manager.MainFrame = MainFrame;
-            //Classes.Manager.MainFrame.Navigate(new Pages.PartnerViewPage());
+            Classes.Manager.MainFrame.Navigate(new Pages.PartnerViewPage());
         }
     }
 }
