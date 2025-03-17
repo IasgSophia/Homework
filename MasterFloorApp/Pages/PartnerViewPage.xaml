@@ -15,41 +15,40 @@
         </Grid.RowDefinitions>
 
         <ListView x:Name="PartnerListView" Grid.Row="0" Width="600">
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListViewItem">
-                    <Style.Triggers>
-                        <DataTrigger Binding="{Binding }" Value="0">
-                            <Setter Property="Background" Value="Gray"/>
-                        </DataTrigger>
-                    </Style.Triggers>
-                </Style>
-            </ListView.ItemContainerStyle>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
 
-                        <Grid Grid.Row="0" Grid.Column="0" >
-                            <TextBlock FontSize="20" Text="{Binding PartnerType.Name, StringFormat={}{0} | }"></TextBlock>
-                            <TextBlock FontSize="20" Margin="50,0,0,0" Text="{Binding Partner.Name}"></TextBlock>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                <TextBlock FontSize="20" Text="{Binding Partner.PartnerType.Name}" />
+                                <TextBlock FontSize="20" Text=" | " Margin="5,0"/>
+                                <TextBlock FontSize="20" Text="{Binding Partner.Partner.Name}" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1">
+                                <TextBlock Text="{Binding Partner.Directors.LastName}" />
+                                <TextBlock Text="{Binding Partner.Phone}" />
+                                <TextBlock Text="{Binding Partner.Rating, StringFormat={}Рейтинг: {0}}" />
+                            </StackPanel>
                         </Grid>
-                        
-                        <StackPanel Grid.Row="1" Grid.Column="0">
-                            <TextBlock Text="{Binding Directors.LastName}"></TextBlock>
-                            <TextBlock Text="{Binding Phone}"></TextBlock>
-                            <TextBlock Text="{Binding Rating, StringFormat={}Рейтинг: {0}}"></TextBlock>
-                        </StackPanel>
+
+                        <TextBlock Grid.Column="1" FontSize="25" Text="{Binding Discount, StringFormat={}Скидка: {0}%}"  VerticalAlignment="Center" Margin="10,0,0,0"/>
                     </Grid>
+
                 </DataTemplate>
-            </ListView.ItemTemplate>            
+            </ListView.ItemTemplate>
         </ListView>
+
         <Button Grid.Row="1" x:Name="AddButton" Click="AddButton_Click" Content="Добавить партнера"></Button>
     </Grid>
 </Page>

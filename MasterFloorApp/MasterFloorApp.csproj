@@ -133,9 +133,6 @@
     <Compile Include="Data\Streets.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\sysdiagrams.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Data\TypeProductRate.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

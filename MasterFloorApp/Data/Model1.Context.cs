@@ -13,21 +13,22 @@ namespace MasterFloorApp.Data
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class databaseEntities : DbContext
+    public partial class databasefloorEntities : DbContext
     {
-        private static databaseEntities _context;
-        public databaseEntities()
-            : base("name=databaseEntities")
+        private static databasefloorEntities _context;
+        public databasefloorEntities()
+            : base("name=databasefloorEntities")
         {
         }
-        public static databaseEntities GetContext()
+        public static databasefloorEntities GetContext()
         {
             if (_context == null)
             {
-                _context = new databaseEntities();
+                _context = new databasefloorEntities();
             }
             return _context;
         }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -48,7 +49,6 @@ namespace MasterFloorApp.Data
         public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<ProductType> ProductType { get; set; }
         public virtual DbSet<Streets> Streets { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TypeProductRate> TypeProductRate { get; set; }
     }
 }
