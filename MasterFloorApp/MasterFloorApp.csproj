@@ -144,6 +144,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PartnerHistoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PartnerViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -152,6 +156,9 @@
   <ItemGroup>
     <Compile Include="Pages\AddEditPartnerPage.xaml.cs">
       <DependentUpon>AddEditPartnerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PartnerHistoryPage.xaml.cs">
+      <DependentUpon>PartnerHistoryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PartnerViewPage.xaml.cs">
       <DependentUpon>PartnerViewPage.xaml</DependentUpon>

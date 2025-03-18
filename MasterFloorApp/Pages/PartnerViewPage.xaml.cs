@@ -80,5 +80,15 @@ namespace MasterFloorApp.Pages
         {
             Classes.Manager.MainFrame.Navigate(new Pages.AddEditPartnerPage(null));
         }
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.AddEditPartnerPage(null));
+        }
+
+        private void HistoryViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.PartnerHistoryPage());
+        }
     }
 }

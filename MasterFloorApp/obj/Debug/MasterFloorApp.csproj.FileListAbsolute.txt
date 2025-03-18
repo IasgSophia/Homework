@@ -76,3 +76,30 @@ C:\diploma\masterFLOOOR\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.csproj.
 C:\diploma\masterFLOOOR\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.csproj.CopyComplete
 C:\diploma\masterFLOOOR\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.exe
 C:\diploma\masterFLOOOR\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.pdb
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\bin\Debug\MasterFloorApp.exe.config
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\bin\Debug\MasterFloorApp.exe
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\bin\Debug\MasterFloorApp.pdb
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\bin\Debug\EntityFramework.dll
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\bin\Debug\EntityFramework.xml
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.csproj.AssemblyReference.cache
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MainWindow.g.cs
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\Pages\AddEditPartnerPage.g.cs
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\Pages\PartnerViewPage.g.cs
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\App.g.cs
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp_Content.g.cs
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp_MarkupCompile.cache
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp_MarkupCompile.lref
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\App.baml
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MainWindow.baml
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\Pages\AddEditPartnerPage.baml
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\Pages\PartnerViewPage.baml
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.g.resources
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.Properties.Resources.resources
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.csproj.GenerateResource.cache
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.csproj.CoreCompileInputs.cache
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFl.90BA0F38.Up2Date
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.exe
+C:\Users\lisav\Desktop\Новая папка (2)\Homework\MasterFloorApp\obj\Debug\MasterFloorApp.pdb

@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\homework\\MasterFloorApp\\",
+  "WorkspaceRootPath": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\homework\\masterfloorapp\\masterfloorapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\homework\\masterfloorapp\\masterfloorapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\homework\\masterfloorapp\\masterfloorapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|C:\\homework\\MasterFloorApp\\masterfloorapp\\pages\\partnerviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\masterfloorapp\\pages\\partnerviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\pages\\partnerviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\homework\\masterfloorapp\\masterfloorapp\\pages\\partnerviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\pages\\partnerviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\users\\lisav\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\homework\\masterfloorapp\\pages\\partnerhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\pages\\partnerhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\homework\\masterfloorapp\\masterfloorapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\users\\lisav\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\homework\\masterfloorapp\\pages\\partnerhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\pages\\partnerhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\masterfloorapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\users\\lisav\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\homework\\masterfloorapp\\pages\\addeditpartnerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\pages\\addeditpartnerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|c:\\users\\lisav\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\homework\\masterfloorapp\\pages\\addeditpartnerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\pages\\addeditpartnerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\masterfloorapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\masterfloorapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A9E0970D-D023-400B-BF14-1EB749818DE3}|MasterFloorApp\\MasterFloorApp.csproj|solutionrelative:masterfloorapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,40 +42,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\App.xaml",
-              "RelativeDocumentMoniker": "MasterFloorApp\\App.xaml",
-              "ToolTip": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\App.xaml",
-              "RelativeToolTip": "MasterFloorApp\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-14T11:37:14.521Z",
+              "DocumentIndex": 2,
+              "Title": "PartnerHistoryPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\PartnerHistoryPage.xaml.cs",
+              "RelativeDocumentMoniker": "MasterFloorApp\\Pages\\PartnerHistoryPage.xaml.cs",
+              "ToolTip": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\PartnerHistoryPage.xaml.cs",
+              "RelativeToolTip": "MasterFloorApp\\Pages\\PartnerHistoryPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:31:57.472Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PartnerHistoryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\PartnerHistoryPage.xaml",
+              "RelativeDocumentMoniker": "MasterFloorApp\\Pages\\PartnerHistoryPage.xaml",
+              "ToolTip": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\PartnerHistoryPage.xaml",
+              "RelativeToolTip": "MasterFloorApp\\Pages\\PartnerHistoryPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-18T09:30:27.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddEditPartnerPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\AddEditPartnerPage.xaml.cs",
+              "RelativeDocumentMoniker": "MasterFloorApp\\Pages\\AddEditPartnerPage.xaml.cs",
+              "ToolTip": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\AddEditPartnerPage.xaml.cs",
+              "RelativeToolTip": "MasterFloorApp\\Pages\\AddEditPartnerPage.xaml.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAqwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:08:12.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddEditPartnerPage.xaml",
+              "DocumentMoniker": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\AddEditPartnerPage.xaml",
+              "RelativeDocumentMoniker": "MasterFloorApp\\Pages\\AddEditPartnerPage.xaml",
+              "ToolTip": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\AddEditPartnerPage.xaml",
+              "RelativeToolTip": "MasterFloorApp\\Pages\\AddEditPartnerPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-18T09:08:08.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\App.config",
+              "DocumentMoniker": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\App.config",
               "RelativeDocumentMoniker": "MasterFloorApp\\App.config",
-              "ToolTip": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\App.config",
+              "ToolTip": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\App.config",
               "RelativeToolTip": "MasterFloorApp\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAACLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2025-02-14T11:37:10.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MasterFloorApp\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "MasterFloorApp\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -76,11 +126,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MasterFloorApp\\MainWindow.xaml",
-              "ToolTip": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\MainWindow.xaml",
               "RelativeToolTip": "MasterFloorApp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-14T11:34:55.354Z",
@@ -88,27 +138,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PartnerViewPage.xaml.cs",
-              "DocumentMoniker": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\Pages\\PartnerViewPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\PartnerViewPage.xaml.cs",
               "RelativeDocumentMoniker": "MasterFloorApp\\Pages\\PartnerViewPage.xaml.cs",
-              "ToolTip": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\Pages\\PartnerViewPage.xaml.cs",
+              "ToolTip": "C:\\Users\\lisav\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430 (2)\\Homework\\MasterFloorApp\\Pages\\PartnerViewPage.xaml.cs",
               "RelativeToolTip": "MasterFloorApp\\Pages\\PartnerViewPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAIwFoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T10:39:50.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PartnerViewPage.xaml",
-              "DocumentMoniker": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\Pages\\PartnerViewPage.xaml",
-              "RelativeDocumentMoniker": "MasterFloorApp\\Pages\\PartnerViewPage.xaml",
-              "ToolTip": "C:\\homework\\MasterFloorApp\\MasterFloorApp\\Pages\\PartnerViewPage.xaml",
-              "RelativeToolTip": "MasterFloorApp\\Pages\\PartnerViewPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-14T10:34:54.554Z",
               "EditorCaption": ""
             }
           ]

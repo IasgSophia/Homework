@@ -9,6 +9,7 @@ namespace MasterFloorApp.Pages
 {
     public partial class AddEditPartnerPage : Page
     {
+        
         private InfoPartner _currentPartner;
         private databasefloorEntities _context = databasefloorEntities.GetContext();
 
@@ -80,6 +81,9 @@ namespace MasterFloorApp.Pages
         {
             NavigationService.GoBack();
         }
+
+
+
     }
 }
 
