@@ -1,122 +1,89 @@
-﻿using MasterFloorApp.Data;
-using System;
+﻿using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Navigation;
+using System.Data.Entity.Validation;
+using MasterFloorApp.Data;
 
 namespace MasterFloorApp.Pages
 {
     public partial class AddEditPartnerPage : Page
     {
-        private InfoPartner Partner;
-        private readonly databasefloorEntities _context;
-        public string FlagAddOrEdit;
+        private InfoPartner _currentPartner;
+        private databasefloorEntities _context = databasefloorEntities.GetContext();
 
-        public AddEditPartnerPage(InfoPartner _partner = null)
+        public AddEditPartnerPage(InfoPartner selectedPartner)
         {
             InitializeComponent();
-            _context = databasefloorEntities.GetContext();
-            Partner = _partner ?? new InfoPartner();
-            FlagAddOrEdit = _partner == null ? "add" : "edit";
-            DataContext = Partner;
-            Init();
-        }
+            _currentPartner = selectedPartner ?? new InfoPartner();
+            DataContext = _currentPartner;
 
-        private void Init()
-        {
-            try
+            if (FindName("DirectorComboBox") is ComboBox directorComboBox)
             {
-                PartnerTypeComboBox.ItemsSource = _context.PartnerType.ToList();
-                PartnerTypeComboBox.DisplayMemberPath = "Name";
-                PartnerTypeComboBox.SelectedValuePath = "IdPartnerType";
-
-                DirectorComboBox.ItemsSource = _context.Directors.ToList();
-                DirectorComboBox.DisplayMemberPath = "LastName";
-                DirectorComboBox.SelectedValuePath = "IdDirector";
-
-                INNComboBox.ItemsSource = _context.INN.ToList();
-                INNComboBox.DisplayMemberPath = "INN";
-                INNComboBox.SelectedValuePath = "IdINN";
-
-                AddressComboBox.ItemsSource = _context.Adress.ToList();
-                AddressComboBox.DisplayMemberPath = "Street";
-                AddressComboBox.SelectedValuePath = "IdAdress";
-
-                if (FlagAddOrEdit == "edit")
-                {
-                    PartnerTypeComboBox.SelectedValue = Partner.IdPartnerType;
-                    DirectorComboBox.SelectedValue = Partner.IdDirector;
-                    INNComboBox.SelectedValue = Partner.IdINN;
-                    AddressComboBox.SelectedValue = Partner.IdAdress;
-                    EmailTextBox.Text = Partner.PartnerEmail;
-                    PhoneTextBox.Text = Partner.Phone;
-                    RatingTextBox.Text = Partner.Rating.ToString() ?? string.Empty;
-                }
+                var directors = _context.Directors.Select(d => new { d.IdDirector, FullName = d.LastName + " " + d.FirstName + " " + d.Middlename }).ToList();
+                directorComboBox.ItemsSource = directors;
+                directorComboBox.SelectedValuePath = "IdDirector";
+                directorComboBox.DisplayMemberPath = "FullName";
             }
-            catch (Exception ex)
+
+            if (FindName("PartnerTypeComboBox") is ComboBox partnerTypeComboBox)
             {
-                MessageBox.Show($"Ошибка загрузки данных: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                var partnerTypes = _context.PartnerType.Select(pt => new { pt.IdPartnerType, pt.Name }).ToList();
+                partnerTypeComboBox.ItemsSource = partnerTypes;
+                partnerTypeComboBox.SelectedValuePath = "IdPartnerType";
+                partnerTypeComboBox.DisplayMemberPath = "Name";
+            }
+
+            if (FindName("AddressComboBox") is ComboBox addressComboBox)
+            {
+                var addresses = _context.Adress
+                    .Join(_context.Index, a => a.IdIndex, i => i.IdIndex, (a, i) => new { a, IndexName = i.IndexName })
+                    .Join(_context.Areas, ai => ai.a.AreaId, ar => ar.AreaId, (ai, ar) => new { ai.a, ai.IndexName, AreaName = ar.AreaName })
+                    .Join(_context.Cities, aai => aai.a.CityId, c => c.CityId, (aai, c) => new { aai.a, aai.IndexName, aai.AreaName, CityName = c.CityName })
+                    .Join(_context.Streets, aac => aac.a.StreetId, s => s.IdStreet, (aac, s) => new
+                    {
+                        aac.a.IdAdress,
+                        FullAddress = $"{aac.IndexName}, {aac.AreaName}, {aac.CityName}, {s.StreetName}, {aac.a.HouseNumber}"
+                    }).ToList();
+                addressComboBox.ItemsSource = addresses;
+                addressComboBox.SelectedValuePath = "IdAdress";
+                addressComboBox.DisplayMemberPath = "FullAddress";
             }
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!ValidateInputs())
-                return;
-
             try
             {
-                Partner.IdPartnerType = (int)PartnerTypeComboBox.SelectedValue;
-                Partner.IdDirector = (int)DirectorComboBox.SelectedValue;
-                Partner.IdINN = (int)INNComboBox.SelectedValue;
-                Partner.IdAdress = (int)AddressComboBox.SelectedValue;
-                Partner.PartnerEmail = EmailTextBox.Text;
-                Partner.Phone = PhoneTextBox.Text;
-
-                if (!int.TryParse(RatingTextBox.Text, out int rating) || rating < 0)
-                {
-                    MessageBox.Show("Некорректное значение рейтинга!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
-                Partner.Rating = rating;
-
-                if (FlagAddOrEdit == "add")
-                {
-                    _context.InfoPartner.Add(Partner);
-                }
+                if (_currentPartner.IdInfoPartner == 0)
+                    _context.InfoPartner.Add(_currentPartner);
 
                 _context.SaveChanges();
-                MessageBox.Show("Данные сохранены", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                NavigationService?.GoBack();
+                MessageBox.Show("Данные сохранены", "Информация", MessageBoxButton.OK, MessageBoxImage.Information);
+                NavigationService.GoBack();
             }
-            catch (Exception ex)
+            catch (DbEntityValidationException ex)
             {
-                MessageBox.Show($"Ошибка сохранения: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                string errorMessage = "Ошибка валидации:";
+                foreach (var validationErrors in ex.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        errorMessage += $"\n- {validationError.PropertyName}: {validationError.ErrorMessage}";
+                    }
+                }
+                MessageBox.Show(errorMessage, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }
-
-        private bool ValidateInputs()
-        {
-            if (string.IsNullOrWhiteSpace(EmailTextBox?.Text) ||
-                string.IsNullOrWhiteSpace(PhoneTextBox?.Text) ||
-                PartnerTypeComboBox?.SelectedValue == null ||
-                DirectorComboBox?.SelectedValue == null ||
-                INNComboBox?.SelectedValue == null ||
-                AddressComboBox?.SelectedValue == null)
-            {
-                MessageBox.Show("Заполните все обязательные поля!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-                return false;
-            }
-            return true;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService?.GoBack();
+            NavigationService.GoBack();
         }
     }
 }
+
+
 
 
 

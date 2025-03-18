@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MasterFloorApp.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddEditPartnerPage">
+      Title="Добавление/Редактирование Партнера">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -27,36 +27,53 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
 
             <Label Content="ID Партнера:" Grid.Row="0" Grid.Column="0" />
             <Label Content="Тип Партнера:" Grid.Row="1" Grid.Column="0" />
-            <Label Content="Директор:" Grid.Row="2" Grid.Column="0" />
-            <Label Content="Email:" Grid.Row="3" Grid.Column="0" />
-            <Label Content="Телефон:" Grid.Row="4" Grid.Column="0" />
+            <Label Content="Фамилия директора:" Grid.Row="2" Grid.Column="0" />
+            <Label Content="Имя директора:" Grid.Row="3" Grid.Column="0" />
+            <Label Content="Отчество директора:" Grid.Row="4" Grid.Column="0" />
+            <Label Content="Email:" Grid.Row="5" Grid.Column="0" />
+            <Label Content="Телефон:" Grid.Row="6" Grid.Column="0" />
             <Label Content="ИНН:" Grid.Row="0" Grid.Column="2" />
-            <Label Content="Адрес:" Grid.Row="1" Grid.Column="2" />
-            <Label Content="Рейтинг:" Grid.Row="2" Grid.Column="2" />
+            <Label Content="Индекс:" Grid.Row="1" Grid.Column="2" />
+            <Label Content="Область:" Grid.Row="2" Grid.Column="2" />
+            <Label Content="Город:" Grid.Row="3" Grid.Column="2" />
+            <Label Content="Улица:" Grid.Row="4" Grid.Column="2" />
+            <Label Content="Дом:" Grid.Row="5" Grid.Column="2" />
+            <Label Content="Рейтинг:" Grid.Row="6" Grid.Column="2" />
 
             <TextBox x:Name="IdTextBox" Grid.Row="0" Grid.Column="1" IsEnabled="False" IsReadOnly="True" />
             <ComboBox x:Name="PartnerTypeComboBox" Grid.Row="1" Grid.Column="1" SelectedIndex="0" DisplayMemberPath="Name" SelectedValuePath="IdPartnerType" />
-            <ComboBox x:Name="DirectorComboBox" Grid.Row="2" Grid.Column="1" SelectedIndex="0" DisplayMemberPath="LastName" SelectedValuePath="IdDirector" />
-            <TextBox x:Name="EmailTextBox" Grid.Row="3" Grid.Column="1" />
-            <TextBox x:Name="PhoneTextBox" Grid.Row="4" Grid.Column="1" />
-            <ComboBox x:Name="INNComboBox" Grid.Row="0" Grid.Column="3" SelectedIndex="0" IsEditable="False" DisplayMemberPath="INN" SelectedValuePath="IdINN" />
-            <ComboBox x:Name="AddressComboBox" Grid.Row="1" Grid.Column="3" SelectedIndex="0" IsEditable="False" DisplayMemberPath="IdAdress" SelectedValuePath="IdAdress" />
-            <TextBox x:Name="RatingTextBox" Grid.Row="2" Grid.Column="3" />
+            <TextBox x:Name="LastNameTextBox" Grid.Row="2" Grid.Column="1" />
+            <TextBox x:Name="FirstNameTextBox" Grid.Row="3" Grid.Column="1" />
+            <TextBox x:Name="MiddleNameTextBox" Grid.Row="4" Grid.Column="1" />
+            <TextBox x:Name="EmailTextBox" Grid.Row="5" Grid.Column="1" />
+            <TextBox x:Name="PhoneTextBox" Grid.Row="6" Grid.Column="1" />
+            <TextBox x:Name="INNTextBox" Grid.Row="0" Grid.Column="3" />
+            <TextBox x:Name="IndexTextBox" Grid.Row="1" Grid.Column="3" />
+            <TextBox x:Name="AreaTextBox" Grid.Row="2" Grid.Column="3" />
+            <TextBox x:Name="CityTextBox" Grid.Row="3" Grid.Column="3" />
+            <TextBox x:Name="StreetTextBox" Grid.Row="4" Grid.Column="3" />
+            <TextBox x:Name="HouseNumberTextBox" Grid.Row="5" Grid.Column="3" />
+            <TextBox x:Name="RatingTextBox" Grid.Row="6" Grid.Column="3" />
         </Grid>
 
-        <Button x:Name="BackButton"
-                Click="BackButton_Click"
-                Content="Назад"
-                Grid.Row="1" HorizontalAlignment="Left" />
-
-        <Button x:Name="SaveButton"
-                Click="SaveButton_Click"
-                Content="Сохранить"
-                Grid.Row="1" HorizontalAlignment="Right" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+            <Button x:Name="BackButton"
+                    Click="BackButton_Click"
+                    Content="Назад"
+                    Width="100" Height="30" />
+            <Button x:Name="SaveButton"
+                    Click="SaveButton_Click"
+                    Content="Сохранить"
+                    Width="100" Height="30" Margin="10,0,0,0" />
+        </StackPanel>
     </Grid>
-    
 </Page>
